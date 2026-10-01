@@ -1,300 +1,304 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SiteCheck gives small construction contractors daily visibility into site safety and quality with AI-assisted photo review.">
-  <meta name="theme-color" content="#1F3847">
+  <meta name="description" content="SiteCheck — Daily visibility into construction site safety and quality. AI-powered photo auditing for small and mid-size contractors.">
   <title>SiteCheck — Catch it before the concrete dries.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="top-strip">
-    <span class="status-dot"></span>
-    <span>AI-assisted daily site visibility for construction teams</span>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="SiteCheck home">
+      <img src="sitecheck_logo.png" alt="SiteCheck logo">
+      <span>SiteCheck</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#why-sitecheck">Why SiteCheck</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Request a walkthrough</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</header>
 
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand" aria-label="SiteCheck home">
-        <img src="sitecheck_logo.png" alt="SiteCheck logo">
-        <span>SiteCheck</span>
-      </a>
+<main id="top">
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> DAILY SITE VISIBILITY</div>
+        <h1>Catch it before the <em>concrete dries.</em></h1>
+        <p class="hero-text">
+          SiteCheck turns your daily construction photos into an early-warning system for safety,
+          quality and progress — without requiring you to be at every site.
+        </p>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#problem">The problem</a>
-        <a href="#workflow">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#product">Product</a>
-        <a href="#contact" class="nav-cta">Request a walkthrough <span>↗</span></a>
-      </nav>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a walkthrough <span>→</span></a>
+          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item"><strong>2–10</strong><span>sites managed</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><strong>Daily</strong><span>photo review</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><strong>AI</strong><span>issue detection</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-carousel" id="visualCarousel">
+          <div class="visual-topline">
+            <span class="visual-badge"><i></i> SITE OVERVIEW</span>
+            <span class="visual-date">TODAY</span>
+          </div>
+
+          <div class="visual-stage">
+            <article class="visual-slide active" data-slide="0">
+              <img src="daily-photos.png" alt="Daily construction site photos in SiteCheck">
+              <div class="slide-label label-left"><b>01</b> Daily photos</div>
+            </article>
+
+            <article class="visual-slide" data-slide="1">
+              <img src="ai-flags.png" alt="SiteCheck AI flags construction site issues">
+              <div class="slide-label label-right"><b>02</b> AI flags</div>
+            </article>
+
+            <article class="visual-slide" data-slide="2">
+              <img src="visual-timeline.png" alt="SiteCheck visual construction progress timeline">
+              <div class="slide-label label-right"><b>03</b> Visual timeline</div>
+            </article>
+          </div>
+
+          <div class="visual-dots" aria-label="SiteCheck product visuals">
+            <button class="visual-dot active" data-go="0" aria-label="Show daily photos"></button>
+            <button class="visual-dot" data-go="1" aria-label="Show AI flags"></button>
+            <button class="visual-dot" data-go="2" aria-label="Show visual timeline"></button>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-top"><span class="chip-dot amber-dot"></span> AI issue detection</div>
+        <div class="floating-chip chip-bottom"><span class="chip-dot green-dot"></span> Daily visual record</div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">01</span> BUILT FOR THE JOBSITE</div>
-          <h1>Catch it before the <span>concrete dries.</span></h1>
-          <p class="hero-lead">
-            SiteCheck turns daily site photos into a clear early-warning layer for
-            small construction teams — so you can spot visible safety and quality issues
-            before they become expensive problems.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#workflow">See how it works <span>→</span></a>
-            <a class="btn btn-ghost" href="#product">Explore the product</a>
-          </div>
-
-          <div class="hero-proof">
-            <div class="proof-item">
-              <strong>2–10</strong>
-              <span>concurrent sites</span>
-            </div>
-            <div class="proof-line"></div>
-            <div class="proof-item">
-              <strong>Daily</strong>
-              <span>photo-based visibility</span>
-            </div>
-            <div class="proof-line"></div>
-            <div class="proof-item">
-              <strong>AI</strong>
-              <span>assisted issue flagging</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="visual-label">
-            <span class="live-dot"></span>
-            SITE OVERVIEW
-          </div>
-          <div class="dashboard-frame">
-            <div class="frame-top">
-              <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
-              <span class="frame-title">SiteCheck / Daily Review</span>
-              <span class="frame-date">TODAY</span>
-            </div>
-            <img src="assets/sitecheck-ui-overview.png" alt="SiteCheck product interface overview">
-          </div>
-          <div class="annotation annotation-1"><span>01</span> Daily photos</div>
-          <div class="annotation annotation-2"><span>02</span> AI flags</div>
-          <div class="annotation annotation-3"><span>03</span> Visual timeline</div>
-        </div>
+  <section class="problem section">
+    <div class="container">
+      <div class="section-intro reveal">
+        <div class="eyebrow">THE JOBSITE VISIBILITY GAP</div>
+        <h2>You can't be on every site.<br><span>Problems don't wait.</span></h2>
+        <p>When updates arrive as a stream of WhatsApp photos, important details get buried. SiteCheck gives those photos a systematic review.</p>
       </div>
-      <div class="hero-grid-lines" aria-hidden="true"></div>
-    </section>
 
-    <section class="section problem" id="problem">
-      <div class="container split">
-        <div class="section-intro reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">02</span> THE REAL PROBLEM</div>
-          <h2>Your sites don't wait for you.</h2>
-          <p>
-            When you're managing two, five or ten sites, being physically present every day
-            isn't realistic. WhatsApp photos arrive. Decisions get delayed. Small issues can
-            stay invisible until they become expensive.
-          </p>
-        </div>
-
-        <div class="problem-card reveal">
-          <div class="card-top">
-            <span class="micro-label">WITHOUT SITECHECK</span>
-            <span class="risk-badge">VISIBILITY GAP</span>
-          </div>
-          <div class="timeline">
-            <div class="timeline-row">
-              <span class="timeline-time">08:42</span>
-              <div><span class="timeline-dot"></span></div>
-              <div><strong>Site photo received</strong><small>WhatsApp / supervisor</small></div>
-            </div>
-            <div class="timeline-row muted">
-              <span class="timeline-time">11:15</span>
-              <div><span class="timeline-dot"></span></div>
-              <div><strong>Photo still unreviewed</strong><small>Attention elsewhere</small></div>
-            </div>
-            <div class="timeline-row alert">
-              <span class="timeline-time">17:30</span>
-              <div><span class="timeline-dot"></span></div>
-              <div><strong>Issue discovered late</strong><small>Rework / delay risk</small></div>
-            </div>
-          </div>
-          <div class="card-foot">The goal isn't more photos. It's earlier visibility.</div>
-        </div>
+      <div class="problem-grid">
+        <article class="problem-card reveal">
+          <div class="number">01</div>
+          <h3>Photos pile up</h3>
+          <p>Supervisors send daily photos, but nobody has time to inspect every image carefully.</p>
+          <div class="line-icon">▦</div>
+        </article>
+        <article class="problem-card reveal">
+          <div class="number">02</div>
+          <h3>Issues stay hidden</h3>
+          <p>Small visible problems can go unnoticed until they become expensive rework or delays.</p>
+          <div class="line-icon">!</div>
+        </article>
+        <article class="problem-card reveal">
+          <div class="number">03</div>
+          <h3>Progress gets unclear</h3>
+          <p>Without a visual record, comparing today's site condition with yesterday's plan is difficult.</p>
+          <div class="line-icon">↗</div>
+        </article>
       </div>
-    </section>
-
-    <section class="section workflow" id="workflow">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">03</span> SIMPLE DAILY WORKFLOW</div>
-          <h2>From site photo to action.</h2>
-          <p>SiteCheck keeps the review loop short: capture, flag, act.</p>
-        </div>
-
-        <div class="steps">
-          <article class="step-card reveal">
-            <div class="step-number">01</div>
-            <div class="step-icon">↑</div>
-            <h3>Upload site photos</h3>
-            <p>Supervisors add daily progress and inspection photos from the site.</p>
-            <span class="step-tag">PHOTO IN</span>
-          </article>
-
-          <article class="step-card featured reveal">
-            <div class="step-number">02</div>
-            <div class="step-icon">AI</div>
-            <h3>AI flags visible issues</h3>
-            <p>SiteCheck reviews images for visible signals such as exposed rebar, water pooling, safety gear and progress mismatches.</p>
-            <span class="step-tag amber">AI REVIEW</span>
-          </article>
-
-          <article class="step-card reveal">
-            <div class="step-number">03</div>
-            <div class="step-icon">✓</div>
-            <h3>Review and act</h3>
-            <p>See flagged items alongside the site's visual history and decide what needs attention.</p>
-            <span class="step-tag green">ACTION</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section features" id="features">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">04</span> WHAT SITECHECK WATCHES</div>
-          <h2>A second set of eyes for the jobsite.</h2>
-          <p>Designed around the visible signals contractors and supervisors already care about.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="feature-index">A1</span>
-            <div class="feature-icon amber">!</div>
-            <h3>Safety gear</h3>
-            <p>Flag visible missing or inconsistent safety equipment in site photos.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">A2</span>
-            <div class="feature-icon">▰</div>
-            <h3>Exposed rebar</h3>
-            <p>Surface visible construction details that may deserve a closer inspection.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">A3</span>
-            <div class="feature-icon amber">≈</div>
-            <h3>Water pooling</h3>
-            <p>Highlight visible standing-water conditions in uploaded progress photos.</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-index">A4</span>
-            <div class="feature-icon green">↗</div>
-            <h3>Progress mismatch</h3>
-            <p>Compare visual progress with the expected project picture and surface anomalies.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section product" id="product">
-      <div class="container product-shell">
-        <div class="product-copy reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">05</span> ONE PLACE TO SEE THE DAY</div>
-          <h2>Know what happened on every site, every day.</h2>
-          <p>
-            Instead of digging through chats and scattered photos, SiteCheck gives the
-            contractor a focused review surface: sites, flagged findings, evidence and a
-            dated visual timeline.
-          </p>
-          <ul class="check-list">
-            <li><span>✓</span> Site-by-site overview</li>
-            <li><span>✓</span> Flagged findings with photo evidence</li>
-            <li><span>✓</span> Dated visual progress timeline</li>
-            <li><span>✓</span> Designed for phone-first teams</li>
-          </ul>
-          <a class="text-link" href="#contact">Talk through your workflow <span>→</span></a>
-        </div>
-
-        <div class="product-shot reveal">
-          <div class="shot-badge"><span class="live-dot"></span> PRODUCT PREVIEW</div>
-          <div class="shot-inner">
-            <img src="assets/sitecheck-ui-overview.png" alt="SiteCheck UI screens showing sites, AI analysis and inspection results">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section timeline-section">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="eyebrow"><span class="eyebrow-mark">06</span> THE OUTCOME</div>
-          <h2>Less chasing. Earlier action.</h2>
-          <p>SiteCheck is built to fit the way small construction teams already work.</p>
-        </div>
-
-        <div class="outcome-grid">
-          <div class="outcome-item reveal">
-            <span class="outcome-number">01</span>
-            <h3>See</h3>
-            <p>Bring daily site photos into one review flow.</p>
-          </div>
-          <div class="outcome-connector"></div>
-          <div class="outcome-item reveal">
-            <span class="outcome-number">02</span>
-            <h3>Understand</h3>
-            <p>Get visible issues surfaced with the image that triggered them.</p>
-          </div>
-          <div class="outcome-connector"></div>
-          <div class="outcome-item reveal">
-            <span class="outcome-number">03</span>
-            <h3>Act</h3>
-            <p>Follow up while the problem is still small enough to handle.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-section" id="contact">
-      <div class="container cta-box reveal">
-        <div>
-          <div class="eyebrow light"><span class="eyebrow-mark">07</span> READY WHEN YOU ARE</div>
-          <h2>Keep every site within reach.</h2>
-          <p>See how SiteCheck could fit into your daily site-review workflow.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="mailto:hello@sitecheck.app?subject=SiteCheck%20Walkthrough">Request a walkthrough <span>↗</span></a>
-          <a class="btn btn-light-outline" href="#top">Back to top ↑</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-wrap">
-      <div class="footer-brand">
-        <img src="sitecheck_logo.png" alt="">
-        <div>
-          <strong>SiteCheck</strong>
-          <span>Catch it before the concrete dries.</span>
-        </div>
-      </div>
-      <div class="footer-note">Architectural industrial precision, built for the jobsite.</div>
-      <div class="footer-copy">© <span id="year"></span> SiteCheck. Prototype landing page.</div>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="how section" id="how-it-works">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">HOW SITECHECK WORKS</div>
+          <h2>From site photos to<br><span>actionable visibility.</span></h2>
+        </div>
+        <p>Keep the workflow simple. Your supervisor keeps taking photos. SiteCheck does the first-pass review.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-top"><span>01</span><b>UPLOAD</b></div>
+          <div class="step-visual upload-visual">
+            <div class="upload-box"><div class="upload-arrow">↑</div><strong>Drop site photos</strong><small>or upload from phone</small></div>
+          </div>
+          <h3>Upload daily photos</h3>
+          <p>Bring in the photos your supervisors already capture from each active site.</p>
+        </article>
+
+        <div class="step-connector"></div>
+
+        <article class="step reveal">
+          <div class="step-top"><span>02</span><b>AI REVIEW</b></div>
+          <div class="step-visual ai-visual">
+            <div class="scan-card">
+              <div class="scan-line"></div>
+              <div class="scan-corner tl"></div><div class="scan-corner tr"></div>
+              <div class="scan-corner bl"></div><div class="scan-corner br"></div>
+              <span class="scan-label">ANALYSING IMAGE</span>
+            </div>
+            <div class="scan-result"><span>✓</span> 4 visual checks complete</div>
+          </div>
+          <h3>AI flags visible issues</h3>
+          <p>SiteCheck reviews images for common safety, quality and progress signals that need attention.</p>
+        </article>
+
+        <div class="step-connector"></div>
+
+        <article class="step reveal">
+          <div class="step-top"><span>03</span><b>ACT</b></div>
+          <div class="step-visual action-visual">
+            <div class="issue-row"><span class="severity amber">!</span><div><b>Exposed rebar</b><small>Sector A · Photo 04</small></div><span>→</span></div>
+            <div class="issue-row"><span class="severity green">✓</span><div><b>Safety gear</b><small>Sector A · Photo 05</small></div><span>→</span></div>
+            <div class="issue-row"><span class="severity amber">!</span><div><b>Water pooling</b><small>Sector B · Photo 02</small></div><span>→</span></div>
+          </div>
+          <h3>Review and act early</h3>
+          <p>Get a dated record of what changed, what was flagged and where your attention is needed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-intro centered reveal">
+        <div class="eyebrow">BUILT FOR THE JOBSITE</div>
+        <h2>One daily view of <span>what needs attention.</span></h2>
+        <p>SiteCheck is designed around the realities of small construction teams: multiple sites, limited time and a phone-first workflow.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-large reveal">
+          <div class="feature-copy">
+            <div class="feature-icon amber-bg">!</div>
+            <div class="micro-label">VISIBLE ISSUE DETECTION</div>
+            <h3>See problems before they become rework.</h3>
+            <p>Surface visual signals such as exposed reinforcement, water pooling and missing safety gear so a supervisor can review them early.</p>
+          </div>
+          <div class="detection-demo">
+            <div class="mock-photo"></div>
+            <div class="detect-box box-one"><span>EXPOSED REBAR</span></div>
+            <div class="detect-box box-two"><span>SAFETY GEAR</span></div>
+          </div>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon green-bg">↗</div>
+          <div class="micro-label">VISUAL TIMELINE</div>
+          <h3>Know what changed.</h3>
+          <p>Keep dated visual records so you can compare site conditions over time.</p>
+          <div class="timeline-demo">
+            <div><b>28 SEP</b><span></span></div>
+            <div><b>27 SEP</b><span></span></div>
+            <div><b>26 SEP</b><span></span></div>
+          </div>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon blue-bg">✓</div>
+          <div class="micro-label">DAILY SITE SUMMARY</div>
+          <h3>Start your day informed.</h3>
+          <p>Review flagged items and site status from one concise dashboard instead of chasing messages.</p>
+          <div class="summary-demo">
+            <span>3 SITES</span><strong>2</strong><small>items need review</small>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why section" id="why-sitecheck">
+    <div class="container why-grid">
+      <div class="why-copy reveal">
+        <div class="eyebrow">WHY SITECHECK</div>
+        <h2>Built for contractors who manage <span>more than one site.</span></h2>
+        <p>Your team shouldn't need another complicated system. SiteCheck fits into the daily photo workflow you already have and adds a layer of structured visibility.</p>
+
+        <ul class="check-list">
+          <li><span>✓</span><div><strong>Phone-first workflow</strong><small>Designed for supervisors and contractors on the move.</small></div></li>
+          <li><span>✓</span><div><strong>Focused AI review</strong><small>Flags visible conditions that deserve human attention.</small></div></li>
+          <li><span>✓</span><div><strong>One view across sites</strong><small>Keep multiple projects visible without being everywhere.</small></div></li>
+        </ul>
+      </div>
+
+      <div class="timeline-panel reveal">
+        <div class="panel-head"><div><span class="micro-label">VISUAL SITE TIMELINE</span><h3>Harbor Heights · Sector A</h3></div><span class="status-pill green">MONITORED</span></div>
+        <div class="timeline-main">
+          <div class="timeline-item active">
+            <div class="date">TODAY<strong>28 SEP</strong></div>
+            <div class="timeline-photo p1"></div>
+            <div class="timeline-detail"><b>2 items flagged</b><span>Exposed rebar · safety gear</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">YESTERDAY<strong>27 SEP</strong></div>
+            <div class="timeline-photo p2"></div>
+            <div class="timeline-detail"><b>All clear</b><span>No items requiring review</span></div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">26 SEP<strong>26 SEP</strong></div>
+            <div class="timeline-photo p3"></div>
+            <div class="timeline-detail"><b>1 item flagged</b><span>Water pooling</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section" id="contact">
+    <div class="container cta-box reveal">
+      <div class="cta-grid">
+        <div>
+          <div class="eyebrow">READY TO SEE IT IN ACTION?</div>
+          <h2>Don't wait until the<br><span>concrete dries.</span></h2>
+          <p>See how SiteCheck can turn your daily site photos into a practical early-warning workflow.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Work email<input type="email" name="email" placeholder="you@company.com" required></label>
+          <label>Number of active sites
+            <select name="sites" required>
+              <option value="" selected disabled>Select</option>
+              <option>2–3</option><option>4–6</option><option>7–10</option><option>10+</option>
+            </select>
+          </label>
+          <button class="btn btn-primary full" type="submit">Request a walkthrough <span>→</span></button>
+          <p class="form-note" id="formNote">No commitment. Just a quick product walkthrough.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div class="brand footer-brand"><img src="sitecheck_logo.png" alt=""><span>SiteCheck</span></div>
+    <p>Daily visibility into every site.</p>
+    <span>© <span id="year"></span> SiteCheck</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
